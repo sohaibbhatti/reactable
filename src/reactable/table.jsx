@@ -277,7 +277,7 @@ export class Table extends React.Component {
                         }
                     } else {
                         // Apply custom filter
-                        if (this._filterable[filterColumn](extractDataFrom(data, filterColumn).toString(), filter)) {
+                        if (this._filterable[filterColumn](extractDataFrom(data, filterColumn), filter)) {
                             matchedChildren.push(children[i]);
                             break;
                         }
