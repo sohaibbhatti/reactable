@@ -1314,7 +1314,7 @@ window.ReactDOM["default"] = window.ReactDOM;
                                 }
                             } else {
                                 // Apply custom filter
-                                if (this._filterable[filterColumn]((0, _libExtract_data_from.extractDataFrom)(data, filterColumn).toString(), filter)) {
+                                if (this._filterable[filterColumn]((0, _libExtract_data_from.extractDataFrom)(data, filterColumn), filter)) {
                                     matchedChildren.push(children[i]);
                                     break;
                                 }
